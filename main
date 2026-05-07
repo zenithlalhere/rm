@@ -1,0 +1,153 @@
+\documentclass[leqno]{article}
+\usepackage{amsmath, graphicx,array, amsthm}
+\graphicspath{figures/}
+\newtheorem{theorem}{Theorem}[section]      % Numbered by section
+\newtheorem{lemma}{Lemma}[section]        % Specifically numbered within sections
+\newtheorem{proposition}[theorem]{Proposition} % Shares numbering with Theorem
+\newtheorem{corollary}[theorem]{Corollary}     % Shares numbering with Theorem
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\title{Research Methodology}
+\author{Zenith Lal}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\listoffigures
+\listoftables
+\begin{abstract}
+In this article, we will learn how to write a research paper for journals and publishers.
+
+\end{abstract}
+
+\section{Introduction}
+In This section, we will learn how to generate different types of fonts in \LaTeX
+\subsection{Bold and Italics fonts}
+\textbf{This is a bold font}
+\textit{This is an italics font}
+\subsection{Text Sizes}
+
+\begin{itemize}
+\item \large{This is large}
+\item \Large{This is Large}
+\item \huge{This is huge}
+\item \Huge{This is Huge}
+\item \footnotesize{This is footnote sized}
+\end{itemize}
+
+
+\begin{enumerate}
+\item First point
+\item Second point \cite{r1}
+\end{enumerate}
+
+Now we are going to make Tables \\
+\begin{tabular}{|c|c|}
+\hline
+1  & 2 \\
+\hline
+3 & 4 \\
+\hline 
+\end{tabular}
+
+
+$ \alpha \beta \gamma \Gamma  $
+
+Please refer to \eqref{e1}
+\begin{enumerate}
+\item Let $x = (x_1, \cdots, x_n)$, where the $x_i$ are non negative real numbers. Set
+
+$$ M_r(x) = \left( \frac{x_1^r + x_2^r+ \cdots+x_n^r}{n}\right) ^ \frac{1}{r} , r \in \textbf{R} \setminus 0,$$\\
+and\\
+$$M_0 (x) = (x_1 x_2 \cdots x_n)^\frac{1}{n}$$
+
+We call $M_r(x)$ the $rth$ power mean of $x$.
+
+Claim:
+$$ \{ \lim_{r \to0} M_r(x) = M_0(x)$$
+
+
+\item Define
+$$ V_n = \left[
+\begin{array}{ccccc}
+1 & 1 & 1 & \cdots & 1 \\
+x_1 & x_2 & x_3 & \cdots & x_n \\
+x^2_1 & x^2_2 & x^2_3 & \cdots & x^2_n \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+x^{n-1}_1 & x^{n-1}_2 & x^{n-1}_3 & \cdots & x^{n-1}_n
+\end{array}
+\right]$$
+
+We call $V_n$ the \textit{Vandermonde matrix} of order n.\\
+
+Claim:
+$$ det  V_n = \prod_{1 \leq j \leq n} (x_j - x_i).$$
+
+
+
+\item
+\begin{eqnarray}\label{e1}
+(a+b)^2 &=& a.a + a.b + b.a + b.b \\
+&=& a^2 + ab + ba + b^2 \\
+&=& a^2 + 2ab + b^2
+\end{eqnarray}
+
+\end{enumerate}
+\begin{figure}[h!]
+\centering
+\includegraphics[width = 1.920cm, height= 1.080 cm]{Presentation1.png}
+\caption{timetable}
+\end{figure}
+
+\begin{table}[h!]
+  \centering
+  \caption{A simple table example}
+  \label{tab:my_label}
+  \begin{tabular}{|l|c|r|}
+    \hline
+    Column 1 & Column 2 & Column 3 \\
+    \hline
+    Left aligned & Centered & Right aligned \\
+    Item A & 100 & \$50.00 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+
+
+\section{Mathematical Foundations}
+
+\begin{definition}
+A \textbf{prime number} is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+\end{definition}
+
+\begin{lemma}
+Every integer $n > 1$ has at least one prime divisor.
+\end{lemma}
+
+\begin{theorem}[Euclid's Theorem]
+There are infinitely many prime numbers.
+\end{theorem}
+
+\begin{proof}
+Assume there are only finitely many primes $p_1, p_2, \dots, p_n$. Let $P = (p_1 \times p_2 \times \dots \times p_n) + 1$. By the previous lemma, $P$ must have a prime divisor, but none of our listed primes divide $P$. This is a contradiction.
+\end{proof}
+
+\begin{proposition}
+If $p$ is prime and $p$ divides $ab$, then $p$ divides $a$ or $p$ divides $b$.
+\end{proposition}
+
+\begin{corollary}
+The square root of any prime number is irrational.
+\end{corollary}
+
+
+\begin{thebibliography}{9}
+    \bibitem{r1} V. Kumar and P. Mishra, Title of the research paper, Indian Journal of Mathemnatics, Vol.
+\end{thebibliography}
+
+\end{document}
