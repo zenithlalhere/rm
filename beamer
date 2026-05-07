@@ -1,0 +1,76 @@
+\documentclass[12pt]{beamer}
+\usetheme{Ilmenau}
+%\usetheme{Rochester}
+
+
+\usepackage{ragged2e,amsmath,graphicx}
+
+\title{Learning \LaTeX}
+\author{Zenith Lal}
+\institute{Department Of Mathematics, Ramanujan College, \\ University Of Delhi}
+\date{\today}
+
+\begin{document}
+\begin{frame} \transglitter
+\titlepage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Title of the Frame 1}
+    This is the First frame in the Introduction Section
+\end{frame}
+
+\begin{frame}{Title of the Frame 2}
+    
+\end{frame}
+
+\begin{frame}{Title of the Frame 3}
+    \begin{itemize}
+        \item This is the First Point.
+    \end{itemize}
+\end{frame}
+
+\subsection{Subsection 1}
+
+\section{Literature Review}
+
+\begin{frame}{}
+    
+\end{frame}
+
+\section{Main Results}
+
+\begin{frame}{}
+\begin{theorem}
+    Every Cyclic group is Abelian \pause
+\end{theorem}
+    \begin{proof}
+       Let$G$ be a cyclic group and $a$ ne its generator that is $G=<a>$ \pause
+    \end{proof}
+        
+
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Image}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{Screenshot (3).png}
+        \caption{Caption}
+        \label{fig:placeholder}
+    \end{figure}
+\end{frame}
+\begin{frame}{Conclusion}
+This is the Conclusion. This is the Conclusion.
+    
+\end{frame}
+
+\section{References}
+
+
+\end{document}
